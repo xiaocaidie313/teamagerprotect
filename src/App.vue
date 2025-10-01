@@ -6,7 +6,7 @@ import Background from '@/components/background/index.vue'
 <template>
   <background>
     <div class="flex flex-col justify-between min-h-screen w-full">
-      <div class="flex justify-center items-start pt-4 rounded-xl">
+      <div class="flex justify-center items-start pt-4">
         <RouterView />
       </div>
       <Footer />

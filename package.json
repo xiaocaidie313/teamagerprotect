@@ -16,7 +16,9 @@
     "format": "prettier --write src/"
   },
   "dependencies": {
+    "@element-plus/icons-vue": "^2.3.2",
     "@tailwindcss/vite": "^4.1.13",
+    "element-plus": "^2.11.4",
     "pinia": "^3.0.3",
     "vue": "^3.5.22",
     "vue-router": "^4.5.1"
