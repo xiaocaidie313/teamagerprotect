@@ -1,5 +1,9 @@
 <script setup lang="ts"></script>
 <template>
-  <div>i m me</div>
+  <div class="bgcolor w-full h-full">东西呢</div>
 </template>
-<style scoped></style>
+<style scoped>
+.bgcolor {
+  background-color: #f4f4fb;
+}
+</style>

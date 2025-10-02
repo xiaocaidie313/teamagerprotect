@@ -8,8 +8,9 @@
 .container {
   width: 100%;
   min-height: 100vh;
-  background: linear-gradient(to bottom, #b3f8dbc9 0%, rgb(255, 255, 255) 100%);
+  /* background: linear-gradient(to bottom, #f3dbfb 0%, rgb(255, 255, 255) 100%); */
   background-repeat: no-repeat;
+  background-color: #ffffff;
   background-size: cover;
   background-position: center;
 }
