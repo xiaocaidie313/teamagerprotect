@@ -9,7 +9,10 @@ const input = ref('')
     <!-- 小屏幕：聊天内容区域 -->
     <div class="flex-1 p-4 md:hidden">
       <div class="flex flex-col justify-center items-center min-h-full">
-        <div class="flex flex-col gap-6 text-center p-4">
+        <div class="flex flex-col gap-5 text-center p-4">
+          <div class="flex justify-center items-center">
+            <img src="@/assets/xiaoan/xiaoanopeneye.svg" alt="people" class="w-[120px]" />
+          </div>
           <span class="font-bold text-2xl">
             <i><b>嗨！我是小安</b></i>
           </span>
@@ -22,7 +25,10 @@ const input = ref('')
 
     <!-- 大屏幕：居中显示输入框 -->
     <div class="hidden md:flex flex-col gap-7 justify-center items-center h-full p-8">
-      <div class="text-center mb-8">
+      <div class="text-center mb-8 flex items-center justify-center gap-8">
+        <div>
+          <img src="@/assets/xiaoan/xiaoanopeneye.svg" alt="people" class="h-[80px]" />
+        </div>
         <span class="font-bold text-3xl text-gray-700">
           <b><i>嗨！我是小安</i></b>
         </span>

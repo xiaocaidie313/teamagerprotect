@@ -1,9 +1,13 @@
 <script setup lang="ts"></script>
 <template>
-  <div class="bgcolor w-full h-full">东西呢</div>
+  <div class="bgcolor w-full h-full flex flex-col">
+    
+
+
+  </div>
 </template>
 <style scoped>
 .bgcolor {
-  background-color: #f4f4fb;
+  background: linear-gradient(to bottom, #f3d5fec9 0%, #f4f4fb 50%, rgb(255, 255, 255) 100%);
 }
 </style>

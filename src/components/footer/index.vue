@@ -27,7 +27,7 @@
         />对话</label
       >
     </div>
-    <div class="flex flex-col items-center justify-center hover:text-blue-300">
+    <!-- <div class="flex flex-col items-center justify-center hover:text-blue-300">
       <label for=""
         ><img
           src="@/assets/iconfont/footer/me.svg"
@@ -36,7 +36,7 @@
           @click="$router.push('/me')"
         />我的</label
       >
-    </div>
+    </div> -->
   </div>
 </template>
 <style scoped>
