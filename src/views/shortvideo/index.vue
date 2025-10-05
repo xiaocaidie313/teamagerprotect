@@ -1,11 +1,15 @@
 <script setup lang="ts">
 import DisplayVedio from '@/components/diplayvedio/index2.vue'
+import useVideosStore from '@/stores/videos/index'
 import { Search } from '@element-plus/icons-vue'
 import { ref } from 'vue'
+import { storeToRefs } from 'pinia'
 const input = ref('')
+const videosStore = useVideosStore()
+const { tempVideos } = storeToRefs(videosStore)
 </script>
 <template>
-  <div class="bgcolor w-full h-full flex flex-col justify-start gap-2 items-center pt-4">
+  <div class="bgcolor w-full h-full flex flex-col justify-start gap-2 items-center pt-4 pb-20">
     <div class="w-full h-[55px] p-4 flex justify-between items-center brd">
       <el-input
         v-model="input"
@@ -20,29 +24,8 @@ const input = ref('')
       />
     </div>
     <div class="flex flex-col w-4/5 gap-8">
-      <div class="boxcolor w-full h-[200px] playbrd">
-        <DisplayVedio />
-      </div>
-      <div class="boxcolor w-full h-[200px] playbrd">
-        <DisplayVedio />
-      </div>
-      <div class="boxcolor w-full h-[200px] playbrd">
-        <DisplayVedio />
-      </div>
-      <div class="boxcolor w-full h-[200px] playbrd">
-        <DisplayVedio />
-      </div>
-      <div class="boxcolor w-full h-[200px] playbrd">
-        <DisplayVedio />
-      </div>
-      <div class="boxcolor w-full h-[200px] playbrd">
-        <DisplayVedio />
-      </div>
-      <div class="boxcolor w-full h-[200px] playbrd">
-        <DisplayVedio />
-      </div>
-      <div class="boxcolor w-full h-[200px] playbrd">
-        <DisplayVedio />
+      <div v-for="item in tempVideos" :key="item.id" class="boxcolor w-full h-[200px] playbrd">
+        <DisplayVedio :videoId="item.id" />
       </div>
     </div>
   </div>

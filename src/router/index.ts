@@ -12,8 +12,16 @@ const router = createRouter({
       component: () => import('@/views/home/index.vue'),
     },
     {
+      path: '/news',
+      component: () => import('@/views/news/index.vue'),
+    },
+    {
       path: '/shortvideo',
       component: () => import('@/views/shortvideo/index.vue'),
+    },
+    {
+      path: '/showvideo',
+      component: () => import('@/views/showvideo/index.vue'),
     },
     {
       path: '/radio',
@@ -32,6 +40,15 @@ const router = createRouter({
       component: () => import('@/views/me/index.vue'),
     },
   ],
+  // 配置滚动行为
+  scrollBehavior(to, from, savedPosition) {
+    // 如果有保存的位置（比如浏览器后退），则使用保存的位置
+    if (savedPosition) {
+      return savedPosition
+    }
+    // 否则滚动到顶部
+    return { top: 0, behavior: 'smooth' }
+  },
 })
 
 export default router
