@@ -1,6 +1,11 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
+import useRadioStore from '@/stores/radio/index'
 
+const radio = useRadioStore()
+const { getCurrRadio, getCurrIdx, setCurrIdx } = radio
+
+const currRadio = computed(() => getCurrRadio())
 const isPlaying = ref(false)
 const currentTime = ref('0:15')
 const totalTime = ref('3:06')
@@ -47,7 +52,9 @@ const togglePlay = () => {
     <!-- 主要内容区域 -->
     <div class="flex-1 flex flex-col items-center justify-start px-6 pb-40 pt-16">
       <!-- 播客封面 -->
-      <div class="w-72 h-72 bg-podcast rounded-2xl mb-8"></div>
+      <div class="w-72 h-72 bg-podcast rounded-2xl mb-8">
+        <img :src="currRadio.cover" alt="" class="w-full h-full rounded-2xl" />
+      </div>
 
       <!-- 标题 -->
       <p class="text-gray-600 text-lg text-center mb-8 leading-relaxed max-w-sm">

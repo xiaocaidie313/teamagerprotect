@@ -34,7 +34,7 @@ const input = ref('')
 .custom-search-input :deep(.el-input__inner) {
   background-color: transparent !important;
   border: none !important;
-  color: #e8ddf5 !important;
+  /* color: #e8ddf5 !important; */
 }
 
 .custom-search-input :deep(.el-input__prefix) {
