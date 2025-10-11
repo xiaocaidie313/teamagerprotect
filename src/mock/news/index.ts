@@ -17,7 +17,7 @@ export default [
     author: '《科技日报》',
     date: '2025-01-07',
     bgImgUrl: '/carousel/01.jpg',
-    vedioUrl: '/vedio/01.mp4',
+    vedioUrl: '/vedio/02.mp4',
   },
   {
     id: 3,
@@ -27,7 +27,7 @@ export default [
     author: '《经济参考报》',
     date: '2025-01-08',
     bgImgUrl: '/carousel/02.jpg',
-    vedioUrl: '/vedio/01.mp4',
+    vedioUrl: '/vedio/03.mp4',
   },
   {
     id: 4,
@@ -37,7 +37,7 @@ export default [
     author: '《经济日报》',
     date: '2025-01-09',
     bgImgUrl: '/carousel/04.png',
-    vedioUrl: '/vedio/01.mp4',
+    vedioUrl: '/vedio/04.mp4',
   },
   {
     id: 5,
@@ -47,6 +47,7 @@ export default [
     author: '《中国能源报》',
     date: '2025-01-10',
     bgImgUrl: '/carousel/01.jpg',
+    vedioUrl: '/vedio/04.mp4',
   },
   {
     id: 6,

@@ -91,14 +91,15 @@ const sendMessage = async () => {
   const assistantMessage = addMessage('assistant', '')
 
   // 模拟回复内容
-  const responses = [
+  const responses: string[] = [
     '我理解您的问题，让我来帮助您分析一下...',
     '这是一个很有趣的问题！根据我的了解...',
     '感谢您的提问，我想从几个方面来回答您...',
     '您提到的这个问题确实值得深入探讨...',
   ]
 
-  const randomResponse = responses[Math.floor(Math.random() * responses.length)] || responses[0]
+  const randomIndex = Math.floor(Math.random() * responses.length)
+  const randomResponse: string = (responses[randomIndex] || responses[0]) as string
 
   // 打字机效果
   await typewriterEffect(assistantMessage.id, randomResponse, 30)
@@ -180,7 +181,10 @@ const handleKeyPress = (event: KeyboardEvent) => {
     <!-- 大屏幕：聊天界面 -->
     <div class="hidden md:flex flex-col h-full w-full pb-20 justify-center items-center">
       <!-- 初始欢迎界面 -->
-      <div v-if="isFirstMessage" class="flex flex-col gap-7 justify-center items-center h-full p-8">
+      <div
+        v-if="isFirstMessage"
+        class="flex flex-col w-3/5 gap-7 justify-center items-center h-full p-8"
+      >
         <div class="text-center mb-8 flex items-center justify-center gap-8">
           <div>
             <img src="@/assets/xiaoan/xiaoanopeneye.svg" alt="people" class="h-[80px]" />
@@ -190,7 +194,7 @@ const handleKeyPress = (event: KeyboardEvent) => {
           </span>
         </div>
 
-        <div class="bgcolor flex flex-col w-full max-w-2xl rounded-3xl gap-4 p-6">
+        <div class="bgcolor flex flex-col w-full rounded-3xl gap-4 p-6">
           <el-input
             class="bginput"
             v-model="input"

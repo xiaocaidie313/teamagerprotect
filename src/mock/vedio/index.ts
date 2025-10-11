@@ -13,7 +13,7 @@ export default [
   },
   {
     id: 2,
-    url: '/vedio/01.mp4',
+    url: '/vedio/02.mp4',
     title: '视频2',
     author: '作者2',
     date: '2021-01-02',
@@ -25,7 +25,7 @@ export default [
   },
   {
     id: 3,
-    url: '/vedio/01.mp4',
+    url: '/vedio/03.mp4',
     title: '视频3',
     author: '作者3',
     date: '2021-01-03',
@@ -37,7 +37,7 @@ export default [
   },
   {
     id: 4,
-    url: '/vedio/01.mp4',
+    url: '/vedio/04.mp4',
     title: '视频4',
     author: '作者4',
     date: '2021-01-04',
@@ -61,7 +61,7 @@ export default [
   },
   {
     id: 6,
-    url: '/vedio/01.mp4',
+    url: '/vedio/02.mp4',
     title: '视频6',
     author: '作者6',
     date: '2021-01-06',
@@ -73,7 +73,7 @@ export default [
   },
   {
     id: 7,
-    url: '/vedio/01.mp4',
+    url: '/vedio/03.mp4',
     title: '视频7',
     author: '作者7',
     date: '2021-01-07',
@@ -85,7 +85,7 @@ export default [
   },
   {
     id: 8,
-    url: '/vedio/01.mp4',
+    url: '/vedio/04.mp4',
     title: '视频8',
     author: '作者8',
     date: '2021-01-08',
@@ -97,7 +97,7 @@ export default [
   },
   {
     id: 9,
-    url: '/vedio/01.mp4',
+    url: '/vedio/03.mp4',
     title: '视频9',
     author: '作者9',
     date: '2021-01-09',
@@ -109,7 +109,7 @@ export default [
   },
   {
     id: 10,
-    url: '/vedio/01.mp4',
+    url: '/vedio/04.mp4',
     title: '视频10',
     author: '作者10',
     date: '2021-01-10',

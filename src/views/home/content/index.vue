@@ -2,7 +2,6 @@
 import displaynews from '@/components/displaynews/index.vue'
 import mockcarouselpic from '@/mock/carousel/index.ts'
 import useNewstore from '@/stores/news'
-import { RouteView } from 'vue-router'
 import { ref } from 'vue'
 // mock的图片
 const tempcarouselpic = ref(mockcarouselpic)

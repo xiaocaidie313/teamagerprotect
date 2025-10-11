@@ -50,7 +50,7 @@ const togglePlay = () => {
     </div>
 
     <!-- 主要内容区域 -->
-    <div class="flex-1 flex flex-col items-center justify-start px-6 pb-40 pt-16">
+    <div v-if="currRadio" class="flex-1 flex flex-col items-center justify-start px-6 pb-40 pt-16">
       <!-- 播客封面 -->
       <div class="w-72 h-72 bg-podcast rounded-2xl mb-8">
         <img :src="currRadio.cover" alt="" class="w-full h-full rounded-2xl" />
